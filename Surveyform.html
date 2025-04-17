@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FreeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+      <h1 id="title">Online vs Offline Survey Form</h1>
+
+      <p id="description">check which is better online or offline?</p>
+
+      <form id="survey-form">
+
+        <fieldset>
+          <legend> Personal Info !</legend>
+        <label id="name-label">Subhnam :
+        <input id="name" type="text" placeholder="John len" required/></label>
+        <label> Surname :
+          <input id="Surname" type="text" requried/>
+        <label id="email-label">email :
+          <input id="email" type="email" placeholder="**@.gmail.com" required/>
+          </label>
+ <label id="number-label">phone-number:
+   <input id="number" type="number"min="0" max="10" placeholder="90**8823" required/>
+   </fieldset>
+   
+     <fieldset>
+       <legend> Apka MAAT ?</legend>
+      <label for="Offline"><input id="Offline" type="radio" value="Offline" class="inline" name="status" checked />OFFLINE</label>
+<label for="Online"><input id="Online" type="radio" value="Online" name="status" class="inline"  />ONLINE</label>
+
+      </fieldset>
+       <select id="dropdown" name="Dropdown">
+     <option value="">select one please</option>
+     <option value="1"> why Online more info </option>
+     <option value="2"> why Offline is best </option>
+     <option value="3"> both good in his Place</option>
+     <option value="4"> others</option>
+     </select>
+     <label id ="opinon">Your's Thought :
+       <textarea id="opnion " name="opnion" row="3" cols="50" placeholder="apki mithi baate..."></textarea>
+  
+ <input class="inline" type="checkbox" value="yes" required/> 
+ <label>Ready For Submit ! </label>
+
+
+<input class="inline" type="checkbox" value="yes" required/>
+<label>Sure</label>
+ <input type="submit" id="submit" value="Submit" />
